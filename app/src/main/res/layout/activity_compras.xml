@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComprasActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="50dp"
+        android:text="Escolha seu produto:" />
+
+    <CheckBox
+        android:id="@+id/ChkArroz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="98dp"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="false"
+        android:text="Arroz (R$ 2,69)" />
+
+    <CheckBox
+        android:id="@+id/ChkLeite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="149dp"
+        android:buttonTint="@color/colorPrimary"
+        android:text="Leite (R$ 5,00)" />
+
+    <CheckBox
+        android:id="@+id/ChkCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="196dp"
+        android:buttonTint="@color/colorPrimary"
+        android:text="Carne (R$ 10,00)" />
+
+    <CheckBox
+        android:id="@+id/ChkFeijao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="241dp"
+        android:buttonTint="@color/colorPrimary"
+        android:text="Feijão (R$ 2,30)" />
+
+    <CheckBox
+        android:id="@+id/ChkRefri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="251dp"
+        android:buttonTint="@color/colorPrimary"
+        android:text="Refrigerante Coca-Cola (R$ 2,00)" />
+
+    <Button
+        android:id="@+id/BtnTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:text="Total das compras" />
+
+</RelativeLayout>
