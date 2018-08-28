@@ -7,6 +7,11 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
+/**
+ * Desenvolvimento Android
+ * Joao Leocadio - TADS 5 Semestre
+ */
+
 public class ComprasActivity extends AppCompatActivity {
 
     private CheckBox ChkArroz, ChkLeite, ChkCarne, ChkFeijao, ChkRefri;
