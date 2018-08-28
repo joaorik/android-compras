@@ -1,13 +1,8 @@
 package net.leocadio.joao.sistemadecompras;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
@@ -16,7 +11,6 @@ public class ComprasActivity extends AppCompatActivity {
 
     private CheckBox ChkArroz, ChkLeite, ChkCarne, ChkFeijao, ChkRefri;
     private Button BtnTotal;
-    private Double total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +36,7 @@ public class ComprasActivity extends AppCompatActivity {
             {
                 StringBuilder result = new StringBuilder();
                 result.append("Itens selecionados:");
+                double total = 0;
 
                 if (ChkArroz.isChecked()) {
                     result.append("\nArroz: R$ 2,69");
